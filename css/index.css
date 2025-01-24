@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    background: #0c0c0c; /* Cor de fundo padrão */
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+.imagem {
+    height: 350px;
+    width: 550px;
+    padding-left: 80px;
+    margin-top: 80px;
+    
+}
+/* Estilizando a logo */
+.logo {
+    width: 110; /* Dimensão da logo */
+    height: 70px; /* Mantém proporção circular */
+    
+    object-fit: cover; /* Garante que a imagem se ajuste ao contorno */
+    margin: 0 90px; /* Espaçamento entre logo e menu */
+    float: left; /* Faz com que a logo fique à esquerda do menu */
+}
+
+/*MENU*/
+
+.menu {
+    width: 100%;
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 2px solid rgb(200, 0, 0); /* Linha branca fixa */
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0 700px; /* Espaçamento entre logo e menu */
+    padding: 0; /* Remove o padding */
+}
+
+.menu ul li {
+    padding: 10px 15px; /* Ajuste o padding conforme necessário */
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto */
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+/* Animação de mudança de cor */
+
+
+.menu ul li a:hover {
+    background-color: rgb(32, 32, 32); /* Cor de fundo no hover */
+    color: rgb(255, 255, 255); /* Cor do texto no hover */
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.336), 0 0 10px rgb(255, 0, 0, 0.336), 0 0 15px rgb(255, 0, 0, 0.336); /* Sombra de texto RGB */
+}
+
+
+/* Botão de Login */
+.login-button {
+    background-color: #da0000;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 105px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 20px; /* Espaçamento ajustado para o botão de login */
+    top: 20px; /* Mantém o espaçamento no topo */
+}
+
+.login-button:hover {
+    background-color: #850000;
+}
+
+/* Botão de Carrinho */
+.cart-button {
+    background-color: transparent; /* Fundo transparente */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 110px; /* Espaçamento ajustado para o botão de carrinho */
+    top: 20px;
+}
+
+.cart-button img {
+    width: 40px; /* Tamanho do ícone do carrinho */
+    height: 30px; /* Tamanho do ícone do carrinho */
+}
+
+.cart-button:hover img {
+    filter: brightness(0.8); /* Efeito de escurecimento ao passar o mouse */
+}
+
+.info {
+    color:#ffffff;
+    font-family:sans-serif;
+    padding-left: 250px;
+    margin-top: 10px;
+    font-size: 23px;
+    text-decoration: underline;
+    text-decoration-color: rgb(200, 0, 0);
+    text-decoration-thickness: 6px;
+    text-underline-offset: 10px;
+}
